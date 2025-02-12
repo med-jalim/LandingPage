@@ -10,11 +10,11 @@
     <script src="js/main.js"></script>
 </head>
 <body >
-    <header class=" py-2">
+    <header class="bg-dark py-2 rounded-bottom-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="calltoaction col-10 col-md-1"   >
-                    <input type="button" value="تواصل معانا" class="btn btn-outline-primary myborder mytext rounded-4 py-2">
+                    <input type="button" value="تواصل معانا" class="btn btn-outline-primary  myborder mytext rounded-4 py-2">
                 </div>
                 <nav class="col">
                     <ul class="d-flex align-items-center justify-content-center gap-5  mytext fw-bold">
@@ -33,18 +33,23 @@
     </header>
     <main>
         <!-- ----------------------1--------------------- -->
-        <section class="hero mt-5 m-md-5 py-5 d-flex flex-column align-items-center gap-5">
+        <section class="hero  py-5 d-flex flex-column align-items-center gap-5 rounded-5 bg-section ">
             <div class="container text-center ">
               <h1 class="display-4 fw-bolder mb-4 "  data-aos="fade-up" >غنخدموا على محتوى احترافي كيجذب العملاء وكيزيد من مبيعاتك</h1>
               <p class="lead  "  data-aos="fade-up" data-aos-delay="100">غنبنيو ليك نظام محتوى كيجذب العملاء المحتملين و كل ما تحتاج هو الفكرة، وحنا نتكلفوا لك بالباقي</p>
             </div>
-            <div class="row justify-content-center" data-aos="fade-up">
-                <video class="col-11 col-md-10 mx-2" src="https://www.dropbox.com/scl/fi/b6qolyylza7qjvqfzu4dq/video-VSL-oublouch.mp4?rlkey=27jqvauagci0rwfl1lmjt23my&amp;st=xup2w108&amp;raw=1" loop="" autoplay="" preload="auto" controls="" playsinline="" style="cursor:auto;height:100%;border-radius:30px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+            <div class="row mycard justify-content-center" data-aos="fade-up"  data-aos-delay="200">
+                <div class="col-11 col-md-10 mx-2 mycarditem d-flex justify-content-center">
+                  <video class=" " src="https://www.dropbox.com/scl/fi/b6qolyylza7qjvqfzu4dq/video-VSL-oublouch.mp4?rlkey=27jqvauagci0rwfl1lmjt23my&amp;st=xup2w108&amp;raw=1" loop="" autoplay="" preload="auto" controls="" playsinline="" style="cursor:auto;height:100%;width: inherit;border-radius:30px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+                </div>
+                <div class="mycardbtn">
+                  <button class="btn btn-outline-primary myborder rounded-5    px-5 py-3" data-aos="fade-up"  data-aos-delay="300">
+                    خذ الخطوة دابا
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </button>
+                </div>
             </div>
-            <button class="btn btn-primary mybtn btn-lg px-5 py-3" data-aos="fade-up">
-                خذ الخطوة دابا
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </button>
+            
           </section>
           <!-- -----------------------2-------------------- -->
 
@@ -109,9 +114,9 @@
     <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script  >
       AOS.init({
-        duration: 1000,
+        duration: 5000,
         once: true,
-        offset: 100
+        offset: 300
       });
     </script>
 </body>
