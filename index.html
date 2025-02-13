@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="css/mystyle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,10 +19,10 @@
                 </div>
                 <nav class="col">
                     <ul class="d-flex align-items-center justify-content-center gap-5  mytext fw-bold">
-                        <a href="" class="nav-link mylink px-3">خدماتنا</a>
-                        <a href="" class="nav-link mylink">علاش تختارنا</a>
-                        <a href="" class="nav-link mylink">أعمالنا</a>
-                        <a href="" class="nav-link mylink">آراء العملاء</a>
+                        <a href="#servicesSection" class="nav-link mylink px-3">خدماتنا</a>
+                        <a href="#" class="nav-link mylink">علاش تختارنا</a>
+                        <a href="#" class="nav-link mylink">أعمالنا</a>
+                        <a href="#clientSection" class="nav-link mylink">آراء العملاء</a>
                         <!-- <a href="" class="nav-link mylink">آراء العملاء</a> -->
                     </ul>
                 </nav> 
@@ -38,12 +39,12 @@
               <h1 class="display-4 fw-bolder mb-4 "  data-aos="fade-up" >غنخدموا على محتوى احترافي كيجذب العملاء وكيزيد من مبيعاتك</h1>
               <p class="lead  "  data-aos="fade-up" data-aos-delay="100">غنبنيو ليك نظام محتوى كيجذب العملاء المحتملين و كل ما تحتاج هو الفكرة، وحنا نتكلفوا لك بالباقي</p>
             </div>
-            <div class="row mycard justify-content-center" data-aos="fade-up"  data-aos-delay="200">
+            <div class="row mycard justify-content-center" data-aos="fade-up"  data-aos-delay="100">
                 <div class="col-11 col-md-10 mx-2 mycarditem d-flex justify-content-center">
                   <video class=" " src="https://www.dropbox.com/scl/fi/b6qolyylza7qjvqfzu4dq/video-VSL-oublouch.mp4?rlkey=27jqvauagci0rwfl1lmjt23my&amp;st=xup2w108&amp;raw=1" loop="" autoplay="" preload="auto" controls="" playsinline="" style="cursor:auto;height:100%;width: inherit;border-radius:30px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
                 </div>
                 <div class="mycardbtn">
-                  <button class="btn btn-outline-primary myborder rounded-5    px-5 py-3" data-aos="fade-up"  data-aos-delay="300">
+                  <button class="btn btn-outline-primary myborder rounded-end-5 rounded-top-5    px-5 py-3" data-aos="fade-up"  data-aos-delay="300">
                     خذ الخطوة دابا
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                   </button>
@@ -53,7 +54,7 @@
           </section>
           <!-- -----------------------2-------------------- -->
 
-          <section class="problems py-5 bg-light">
+          <section class="problems rounded-5 py-5 bg-light">
             <div class="container">
               <h2 class="text-center mb-5 fw-bold " data-aos="fade-up">حتى لفوقاش غادي تبقى مكتخدمش على البراند ديالك؟</h2>
               <div class="row g-4">
@@ -97,7 +98,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col  d-flex justify-content-center">
+                <div class="col  d-flex justify-content-center" data-aos="fade-up" data-aos-delay="500">
                     <button class="btn btn-outline-primary  btn-lg px-5 py-3">
                          تواصل معانا دبا
                     </button>
@@ -106,6 +107,126 @@
               </div>
             </div>
           </section>
+
+
+           <!-- ----------------3 ----------Services Section -->
+    <section id="servicesSection" class="services rounded-5 py-5">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">شنو الخدمات لي غنوفرو ليك؟</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mb-3"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                <h3 class="h5 mb-3">محتوى احترافي</h3>
+                <p class="card-text">نقدم محتوى عالي الجودة يجذب العملاء</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mb-3"><path d="M21 3v6m0 0H3m18 0-6.364-6M3 21v-6m0 0h18m0 0-6.364 6"></path></svg>
+                <h3 class="h5 mb-3">تحليل السوق</h3>
+                <p class="card-text">دراسة شاملة للسوق المستهدف</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mb-3"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                <h3 class="h5 mb-3">استهداف دقيق</h3>
+                <p class="card-text">نصل إلى عملائك المحتملين بدقة</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- ------------------------4-------------- -->
+     <section id="clientSection" class="testimonials rounded-5 py-5 bg-primary text-white">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">آراء عملائنا</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="200">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-card">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" class=" rounded-circle testimonial-image" alt="صورة العميل">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">"والله معندي ما نتسالك، داكشي خطير تبارك الله عليك..."</p>
+                      <h4 class="testimonial-name">أحمد محمد</h4>
+                      <p class="testimonial-position">مدير تسويق</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" class=" rounded-circle testimonial-image" alt="صورة العميل">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">"عجبتيني آ محمد (خدمة ديالي)...نادي كنادي..."</p>
+                      <h4 class="testimonial-name">سارة أحمد</h4>
+                      <p class="testimonial-position">صاحبة مشروع</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7" class=" rounded-circle testimonial-image" alt="صورة العميل">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">"تبارك الله ومشاء الله عليك، خدمتك زوينة... والله العظيم..."</p>
+                      <h4 class="testimonial-name">محمد علي</h4>
+                      <p class="testimonial-position">مدير تنفيذي</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta py-5 bg-dark rounded-top-5 text-white text-center">
+      <div class="container">
+        <h2 class="mb-4" data-aos="fade-up">جاهز لتطوير محتواك؟</h2>
+        <button class="btn btn-light btn-lg px-5 py-3" data-aos="fade-up" data-aos-delay="200">
+          ابدأ الآن
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </button>
+      </div>
+    </section>
           
     </main>
 
@@ -116,7 +237,7 @@
       AOS.init({
         duration: 5000,
         once: true,
-        offset: 300
+        offset: 250
       });
     </script>
 </body>

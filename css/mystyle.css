@@ -1,0 +1,133 @@
+:root{
+    --bgColor:#ffffff;
+    --textColor: #fef7f7 ;
+    --bgSection1:#e0e7ff;
+}
+
+
+@keyframes scrollanimation {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.bg-section{
+    background-color: var(--bgSection);
+}
+
+.aonscrol{
+    animation: scrollanimation  linear ;
+    animation-timeline:view();
+}
+
+.mytext{
+    color:var(--textColor) !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s !important;
+    
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    min-height: 200vh;
+    scroll-behavior: smooth;
+    background-color: var(--bgColor) !important;
+}
+
+body>header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* background:transparent; */
+    backdrop-filter: blur(50px);
+    z-index: 111111;
+    
+}
+
+.myborder{
+    border-width: 2px !important;
+    border-left-width:1px !important;
+    border-right-width: 1px !important;
+}
+.myborder:hover{
+    border-width:1px !important ;
+    background: linear-gradient(3deg, rgba(0,104,255,1));
+    color: white !important;
+    scale:1.05;
+
+}
+
+.mylink:hover{
+    scale: 1.1;
+   border: 1px solid blue;
+   padding: 5px;
+   border-radius: 20px;
+}
+
+.mybtn{
+    background: linear-gradient(to top,rgb(84, 84, 248) ,rgb(224, 224, 255)) ;
+    transition: all .5s !important;
+}
+.mybtn:hover{
+    background: none;
+    background-color: blue !important;
+}
+
+.hero{
+    margin-top: 10% !important;
+}
+
+
+
+
+
+.mycardbtn{
+    position: absolute;
+    width: max-content !important;
+    background-color: var(--bgSection1);
+    bottom: 0;
+    right: 14%;
+    border-top-left-radius: 40px;
+    padding-top: 1vh;
+    z-index: 11;
+}
+.mycarditem{
+    position: relative;
+    width: max-content;
+    /* z-index: 9; */
+}
+
+/* .mycarditem::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 24%;
+    width: 5%;
+    height: 11%;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 21px 18px 0 var(--bgSection);
+    z-index: 10;
+}  */
+
+@media (max-width:700px) {
+    header>div>div>nav{
+        display: none;
+    }
+    .hero{
+        margin-top: 30% !important;
+    }
+    .mycardbtn{
+        right: -8%;
+        bottom: -11%;
+        scale: 0.5;
+    }
+}
